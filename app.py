@@ -44,5 +44,5 @@ if st.button('Prediksi kualitas air'):
     if predict == 2 :
         result = 'Air layak dan aman diminum'
     else:
-        result = 'Air tidak dan tidak aman diminum'
+        result = 'Air tidak layak dan tidak aman diminum'
     st.success(result)
