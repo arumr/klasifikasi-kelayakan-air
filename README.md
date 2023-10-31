@@ -141,7 +141,8 @@ plt.xlabel("Predicted")
 plt.title("Confusion Matrix")
 plt.tight_layout()
 ```
-![Alt text](output.png)
+![image](https://github.com/arumr/klasifikasi-kelayakan-air/assets/137166475/019c38ef-afb6-49a0-bfa6-cb3bc669c2e1)
+
 
 ## Modeling
 sebelumnya mari kita import library yang nanti akan digunakan,
