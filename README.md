@@ -132,7 +132,7 @@ for col in objcols:
 
 df['is_safe'] = le.fit_transform(df['is_safe']
 ```
-Selanjutnya data exploration kita
+Selanjutnya data exploration 
 ``` bash
 plt.figure(figsize=(10,5))
 sns.heatmap(confusion_matrix(logreg.predict(x_test),y_test), annot = True,fmt='.1f')
