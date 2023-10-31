@@ -156,6 +156,24 @@ from sklearn.model_selection import train_test_split
 
 x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.3, random_state=1)
 ```
+
+``` bash
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, confusion_matrix,classification_report
+
+
+logreg = LogisticRegression(solver='lbfgs', max_iter=8000)
+
+model = logreg.fit(x_train, y_train)
+
+y_pred = logreg.predict(x_test)
+acc = accuracy_score(y_test,y_pred)*100
+print('Accuracy of the model: {0}%'.format(acc))
+print(f"\nconfusion matrix: \n {confusion_matrix(y_test,logreg.predict(x_test))}\n")
+confusion = confusion_matrix (y_test,logreg.predict(x_test))
+tn,fp,fn,tp = confusion.ravel()
+print(f"classification report :\n {classification_report(y_test,logreg.predict(x_test))}")
+```
 score modelnya yaitu 89%
 
 ## Evaluation
